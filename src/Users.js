@@ -143,6 +143,7 @@ function App() {
       // add new signed url to each item in array
       users.forEach((u, i) => {
         u.avatarUrl = userData[i]
+        console.log(u.avatarUrl)
       })
      dispatch({ type: 'SET_USERS', users })
      } catch(err) {
