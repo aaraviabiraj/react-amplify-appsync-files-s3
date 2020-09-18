@@ -5,7 +5,7 @@ import Users from './Users'
 function App() {
   return (
     <Users />
-    <Products />
+   //<Products />
   )
 }
 
