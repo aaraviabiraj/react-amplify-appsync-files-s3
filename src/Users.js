@@ -110,7 +110,7 @@ function App() {
       />
       <button
         style={styles.button}
-        onClick={createUser}>Save Image</button>
+        onClick={createUser}>Save File</button>
       {
         state.users.map((u, i) => {
           return (
