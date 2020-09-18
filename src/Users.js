@@ -43,6 +43,7 @@ function App() {
     try {
       const imageData = await Storage.get(key)
       updateAvatarUrl(imageData)
+      console.log(avatarUrl)
     } catch(err) {
       console.log('error: ', err)
     }
@@ -143,8 +144,7 @@ function App() {
       // add new signed url to each item in array
       users.forEach((u, i) => {
         u.avatarUrl = userData[i]
-        console.log(u.avatarUrl)
-      })
+         })
      dispatch({ type: 'SET_USERS', users })
      } catch(err) {
        console.log('error fetching users')
