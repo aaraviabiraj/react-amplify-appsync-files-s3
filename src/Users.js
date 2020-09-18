@@ -43,7 +43,6 @@ function App() {
     try {
       const imageData = await Storage.get(key)
       updateAvatarUrl(imageData)
-      console.log(avatarUrl)
     } catch(err) {
       console.log('error: ', err)
     }
@@ -120,7 +119,8 @@ function App() {
             >
               <p
                 style={styles.username}
-               onClick={() => fetchImage(u.avatar.key)}>{u.username}</p>
+ //              onClick={() => fetchImage(u.avatar.key)}>{u.username}</p>
+                 onClick={() => fetchAllImages()}></p>
             </div>
           )
         })
