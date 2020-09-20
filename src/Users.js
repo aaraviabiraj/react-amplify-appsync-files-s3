@@ -43,6 +43,7 @@ function App() {
     try {
       const imageData = await Storage.get(key)
       updateAvatarUrl(imageData)
+      console.log('url: ',imageData)
     } catch(err) {
       console.log('error: ', err)
     }
@@ -104,7 +105,7 @@ function App() {
         style={{margin: '10px 0px'}}
       />
       <input
-        placeholder='Username'
+        placeholder='Name'
         value={username}
         onChange={e => updateUsername(e.target.value)}
       />
