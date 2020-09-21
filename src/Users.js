@@ -119,7 +119,7 @@ function App() {
             >
               <p
                 style={styles.username}
-               onClick={() => fetchImage(u.avatar.key),console.log(avatarUrl)}>{u.username}</p>
+               onClick={() => fetchImage(u.avatar.key),window.alert(avatarUrl)}>{u.username}</p>
             </div>
           )
         })
