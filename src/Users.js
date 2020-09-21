@@ -128,7 +128,7 @@ function App() {
         src={avatarUrl}
         style={{ width: 300 }}
       />
-      <p>{avatarUrl}</p>
+      <p><a href={avatarUrl}>Selected Presigned URL</a></p>
     </div>
   )
 
